@@ -1,0 +1,5 @@
+/.venv/
+/label_transform/kitti/labels2coco/test/0*.txt
+/label_transform/kitti/labels2coco/train/0*.txt
+/label_transform/*.txt
+
