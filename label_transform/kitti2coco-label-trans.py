@@ -6,12 +6,12 @@ import sys
 # set your data_set absolute path
 # as for me, for example
 # test example
-kitti_img_path = '/content/gdrive/My Drive/KITTI_origin/data_object_image_2/training/image_2/'
-kitti_label_path = '/content/gdrive/My Drive/KITTI_origin/data_object_label_2/training/label_2/'
+kitti_img_path = '/content/KITTI_origin/data_object_image_2/training/image_2/'
+kitti_label_path = '/content/KITTI_origin/data_object_label_2/training/label_2/'
 
 # transformed labels to save path
-kitti_label_train_path = '/content/gdrive/My Drive/COCO_styled_KITTI/kitti/labels/train/'
-kitti_label_test_path = '/content/gdrive/My Drive/COCO_styled_KITTI/kitti/labels/test/'
+kitti_label_train_path = '/content/COCO_styled_KITTI/kitti/labels/train/'
+kitti_label_test_path = '/content/COCO_styled_KITTI/kitti/labels/test/'
 
 # the absolute ptah of your data set
 # kitti_data_real_path = '/home/pakcy/Desktop/PyTorch-YOLOv3/data/kitti/images/train/'
@@ -19,7 +19,7 @@ kitti_label_test_path = '/content/gdrive/My Drive/COCO_styled_KITTI/kitti/labels
 index = 0
 cvfont = cv2.FONT_HERSHEY_SIMPLEX
 
-kitti_names = open('/content/gdrive/My Drive/COCO_styled_KITTI/kitti.names', 'r')
+kitti_names = open('/content/COCO_styled_KITTI/kitti.names', 'r')
 kitti_names_contents = kitti_names.readlines()
 kitti_images = os.listdir(kitti_img_path)
 kitti_labels = os.listdir(kitti_label_path)
@@ -36,8 +36,8 @@ kitti_names_num = dict(zip(kitti_names_dic_key, values))
 # print(kitti_names_num)
 
 # 创建训练集图片的List
-f = open('/content/gdrive/My Drive/COCO_styled_KITTI/kitti/train.txt', 'w')
-f2 = open('/content/gdrive/My Drive/COCO_styled_KITTI/kitti/val.txt', 'w')
+f = open('/content/COCO_styled_KITTI/kitti/train.txt', 'w')
+f2 = open('/content/COCO_styled_KITTI/kitti/val.txt', 'w')
 for ind, img in enumerate(kitti_images):
     if ind < 6000:
         f.write(kitti_img_path + img + '\n')
