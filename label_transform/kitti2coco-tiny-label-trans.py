@@ -6,8 +6,8 @@ import sys
 # set your data_set absolute path
 # as for me, for example
 # test example
-kitti_img_path = '/home/waynelin/temp/cmpe297/Homework2/dataset/data_object_image_2/training/image_2/'
-kitti_label_path = '/home/waynelin/temp/cmpe297/Homework2/dataset/data_object_label_2/training/label_2/'
+kitti_img_path = '/home/waynelin/temp/cmpe297/Homework2/KITTI_origin/data_object_image_2/training/image_2/'
+kitti_label_path = '/home/waynelin/temp/cmpe297/Homework2/KITTI_origin/data_object_label_2/training/label_2/'
 
 # transformed labels to save path
 kitti_label_train_path = '/home/waynelin/temp/cmpe297/Homework2/COCO_styled_KITTI_tiny/kitti/labels/train/'
@@ -37,9 +37,9 @@ kitti_names_num = dict(zip(kitti_names_dic_key, values))
 
 # 创建训练集图片的List
 f = open('/home/waynelin/temp/cmpe297/Homework2/COCO_styled_KITTI_tiny/kitti/train.txt', 'w')
-kitti_train_img_path = '/content/COCO_styled_KITTI_tiny/kitti/image/train/'
+kitti_train_img_path = '/content/COCO_styled_KITTI_tiny/kitti/images/train/'
 f2 = open('/home/waynelin/temp/cmpe297/Homework2/COCO_styled_KITTI_tiny/kitti/val.txt', 'w')
-kitti_test_img_path = '/content/COCO_styled_KITTI_tiny/kitti/image/test/'
+kitti_test_img_path = '/content/COCO_styled_KITTI_tiny/kitti/images/test/'
 for ind, img in enumerate(kitti_images):
     if ind < 600:
         f.write(kitti_train_img_path + img + '\n')

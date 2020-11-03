@@ -37,9 +37,9 @@ kitti_names_num = dict(zip(kitti_names_dic_key, values))
 
 # 创建训练集图片的List
 f = open('/content/COCO_styled_KITTI/kitti/train.txt', 'w')
-kitti_train_img_path = '/content/COCO_styled_KITTI/kitti/image/train/'
+kitti_train_img_path = '/content/COCO_styled_KITTI/kitti/images/train/'
 f2 = open('/content/COCO_styled_KITTI/kitti/val.txt', 'w')
-kitti_test_img_path = '/content/COCO_styled_KITTI/kitti/image/test/'
+kitti_test_img_path = '/content/COCO_styled_KITTI/kitti/images/test/'
 for ind, img in enumerate(kitti_images):
     if ind < 6000:
         f.write(kitti_train_img_path + img + '\n')

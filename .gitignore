@@ -3,8 +3,8 @@
 /label_transform/kitti/labels2coco/test/0*.txt
 /label_transform/kitti/labels2coco/train/0*.txt
 /label_transform/*.txt
-/data/kitti/image/test/0*.png
-/data/kitti/image/train/0*.png
+/data/kitti/images/test/0*.png
+/data/kitti/images/train/0*.png
 /data/kitti/labels/test/0*.txt
 /data/kitti/labels/train/0*.txt
 
