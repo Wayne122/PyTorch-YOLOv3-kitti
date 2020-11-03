@@ -19,7 +19,7 @@ kitti_label_test_path = '/content/gdrive/My Drive/COCO_styled_KITTI/kitti/labels
 index = 0
 cvfont = cv2.FONT_HERSHEY_SIMPLEX
 
-kitti_names = open('kitti.names', 'r')
+kitti_names = open('/content/gdrive/My Drive/COCO_styled_KITTI/kitti.names', 'r')
 kitti_names_contents = kitti_names.readlines()
 kitti_images = os.listdir(kitti_img_path)
 kitti_labels = os.listdir(kitti_label_path)
