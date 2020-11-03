@@ -1,6 +1,6 @@
 classes=8
-train=COCO_styled_KITTI/kitti/train.txt
-valid=COCO_styled_KITTI/kitti/val.txt
-names=COCO_styled_KITTI/kitti.names
+train=/content/COCO_styled_KITTI/kitti/train.txt
+valid=/content/COCO_styled_KITTI/kitti/val.txt
+names=/content/COCO_styled_KITTI/kitti.names
 backup=backup/
 eval=kittiv1
